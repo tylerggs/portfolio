@@ -1,0 +1,450 @@
+@media screen and (max-width: 1280px) {
+  /*Intro*/
+  .intro h1 {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .intro-container,
+  .free-container {
+    /* margin: 0; */
+    padding: 0;
+  }
+
+  .intro-left-container,
+  .free-right-container {
+    gap: 2rem;
+    padding: 0 6%;
+  }
+
+  .intro-left-content {
+    margin-right: 0;
+  }
+
+  .free-right-content {
+    margin-left: 60px;
+    margin-right: 0px;
+  }
+
+  .intro-right-container img,
+  .free-left-container {
+    max-width: 130%;
+    height: auto;
+  }
+
+  /*State*/
+  .state-right-container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /*Header/ Navbar*/
+  header {
+    padding: 50px 6% 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /*Intro*/
+  .intro h1 {
+    margin-bottom: 40px;
+  }
+  .intro-container {
+    flex-direction: column-reverse;
+  }
+
+  .free-container {
+    flex-direction: column;
+  }
+
+  .intro-right-container {
+    margin-right: 0;
+  }
+
+  .free-left-container {
+    margin-left: 0;
+  }
+
+  .free-right-content {
+    margin-left: 0;
+  }
+
+  .intro-left-container {
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  .free-right-container {
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  /*State*/
+  .state {
+    margin: 280px 0 0;
+  }
+  .state-container {
+    flex-direction: column;
+    height: 500px;
+    position: relative;
+    padding-bottom: 100px;
+    background: linear-gradient(
+      to bottom,
+      var(--gd-vd-gray-blue) 0%,
+      var(--gd-vd-desaturated-blue) 100%
+    );
+  }
+
+  .state-pattern-wrapper {
+    overflow: hidden;
+  }
+
+  .state-pattern {
+    top: -12%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .state-left-container {
+    position: absolute;
+    top: -320px;
+    z-index: 1;
+  }
+
+  .state-right-container {
+    position: relative;
+    text-align: center;
+    margin: 300px 50px 0px 50px;
+  }
+
+  /*Footer*/
+  .footer-container {
+    padding: 0 8%;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  /*Header/ Navbar*/
+  .nav-container
+    .navbar
+    .nav-menu
+    .nav-list
+    .dropdown-item:hover
+    .dropdown-menu,
+  .nav-container .navbar .nav-menu .nav-list .dropdown-menu:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-container
+    .navbar
+    .nav-menu
+    .nav-list
+    .dropdown-item:hover
+    .dropdown-arrow {
+    transform: none;
+  }
+
+  .nav-container
+    .navbar
+    .nav-menu
+    .nav-list
+    .dropdown-item
+    .nav-link.rotate
+    .dropdown-arrow {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-container .nav-toggle .hmbgr {
+    display: flex;
+  }
+
+  .blogr-logo {
+    width: 80px;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-container .navbar {
+    display: flex;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+    padding: 30px 0;
+    /* opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease; */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-container .navbar.open {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nav-container .navbar .nav-menu {
+    width: 100%;
+  }
+
+  .nav-container .navbar .nav-menu .nav-list {
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .nav-container .navbar .nav-menu .nav-list .dropdown-item {
+    width: 100%;
+    position: relative;
+  }
+
+  .nav-container .navbar .nav-menu .nav-list .dropdown-menu {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    border-radius: 8px;
+    padding: 15px 0;
+    margin: 0 auto 15px;
+    gap: 20px;
+    box-shadow: none;
+    background-color: #f2f2f2;
+  }
+
+  /* .nav-container .navbar .nav-menu .nav-list .dropdown-item .dropdown-menu.open {
+    display: flex; 
+    opacity: 1;
+  } */
+
+  .nav-container .navbar .nav-menu .nav-link {
+    color: var(--vd-black-blue);
+    justify-content: center;
+    font-size: 1.125rem;
+  }
+
+  .nav-container .navbar .nav-menu .nav-link span::after {
+    display: none;
+  }
+
+  .nav-container .navbar .nav-menu .nav-list .dropdown-menu .dropdown-link {
+    font-size: 1.1rem;
+    color: var(--vd-grayish-blue);
+    font-family: var(--font-overpass);
+  }
+
+  .dropdown-item {
+    margin-left: 0;
+  }
+
+  .line {
+    display: block;
+    width: 90%;
+    border: none;
+    height: 1px;
+    background-color: #e4e5e5;
+    margin-top: 30px;
+  }
+
+  .nav-container .navbar .nav-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+  }
+
+  .nav-container .navbar .nav-btns a {
+    margin: 0 0 20px;
+    color: var(--vd-black-blue);
+    font-size: 1.125rem;
+  }
+
+  .nav-container .navbar .nav-btns .sign-up {
+    color: var(--white);
+    background: linear-gradient(to right, var(--gd-vl-red), var(--gd-l-red));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*Home*/
+  .home-container .desktop-home-pattern {
+    display: none;
+  }
+
+  .home-container .mobile-home-pattern {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: -10%;
+  }
+
+  .home-container .home-content {
+    padding: 0;
+    margin: 11rem 0 10rem;
+  }
+
+  .home-container .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-container .home-content p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .home-container .home-content .home-cta-btn .start-ff-btn,
+  .home-container .home-content .home-cta-btn .learn-more-btn {
+    height: 45px;
+  }
+
+  /*Intro*/
+  .intro h1 {
+    font-size: 1.688rem;
+  }
+
+  .intro-left-content,
+  .free-right-content {
+    width: 100%;
+  }
+
+  .intro-left-content h2,
+  .free-right-content h2 {
+    padding: 0 20px;
+  }
+
+  /*State*/
+  .state-right-container {
+    margin: 300px 0px 0px 0px;
+  }
+
+  .state-right-container h1 {
+    font-size: 2rem;
+  }
+
+  /*Footer*/
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .footer-links h1 {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /*Header/Navbar*/
+  .nav-container .navbar {
+    width: 100%;
+  }
+
+  /*State*/
+  .state-pattern {
+    top: -30%;
+    left: -20%;
+    right: 0;
+    width: 150%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /*Home*/
+
+  .home-container {
+    background: linear-gradient(to bottom, var(--gd-vl-red), var(--gd-l-red));
+  }
+
+  .home-container .mobile-home-pattern {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: -90%;
+    top: -45%;
+  }
+
+  /*Intro and Free*/
+  .intro-left-content p,
+  .free-right-content p {
+    padding: 0 15px;
+  }
+
+  /*State*/
+  .state {
+    margin: 180px 0 0;
+  }
+
+  .state-container {
+    height: 600px;
+  }
+  .state-left-container {
+    top: -250px;
+  }
+
+  .state-right-container {
+    margin: 230px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /*State*/
+  .state-left-container {
+    top: -230px;
+  }
+
+  .state-right-container {
+    margin: 230px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  /*Intro*/
+  .intro-right-container {
+    padding: 0 20px;
+  }
+
+  .free-left-container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /*State*/
+  .state {
+    margin: 130px 0 0;
+  }
+  .state-container {
+    height: 550px;
+  }
+
+  .state-left-container {
+    top: -200px;
+  }
+}

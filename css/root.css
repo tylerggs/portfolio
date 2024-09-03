@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*font-family: "Overpass", sans-serif;
+font-family: "Ubuntu", sans-serif;
+font-size: 16px*/
+
+:root {
+
+    /*Colors*/
+
+    /* #Primary */
+    --l-red: hsl(356, 100%, 66%); /*(CTA text)*/
+    --vl-red: hsl(355, 100%, 74%); /*(CTA hover background)*/
+    --vd-blue: hsl(208, 49%, 24%); /*(headings)*/
+
+    /* #Neutral */
+    --white: hsl(0, 0%, 100%); /*(text)*/
+    --grayish-blue: hsl(240, 2%, 79%); /*(footer text)*/
+    --vd-grayish-blue: hsl(207, 13%, 34%); /*(body copy)*/
+    --vd-black-blue: hsl(240, 10%, 16%); /*(footer background)*/
+
+    /*#Gradient*/
+
+    /*Background gradient - Intro/CTA mobile nav:*/
+    --gd-vl-red: hsl(13, 100%, 72%);
+    --gd-l-red: hsl(353, 100%, 62%);
+
+    /*Background gradient - body:*/
+    --gd-vd-gray-blue: hsl(237, 17%, 21%);
+    --gd-vd-desaturated-blue: hsl(237, 23%, 32%);
+
+    /*#Others*/
+    
+    /*Fonts*/
+    --font-overpass: "Overpass", sans-serif; /*300 600*/
+    --font-ubuntu: "Ubuntu", sans-serif; /*400, 500, 700*/
+
+
+}
