@@ -54,20 +54,26 @@
 
 /*Home*/
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 280px 50px 0 50px;
-  gap: 5rem;
+  padding: 280px 0 0 0;
   height: 100%;
   background: var(--white-1);
   /* border: 2px solid red; */
   margin: 0 auto;
 }
 
-/* .home-txt {
-  border: 2px solid blue;
-} */
+.home-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    gap: 5rem;
+    padding: 0 3rem;
+}
+
+.home-txt {
+  /* border: 2px solid blue; */
+  position: relative;
+}
 
 .home-txt h1,
 .home-txt p {
@@ -79,17 +85,23 @@
   align-items: center;
   color: var(--black-1);
   font-size: 3.3rem;
+  font-weight: 700;
   line-height: 1.2;
-  text-wrap: wrap;
+  /* text-wrap: wrap; */
   /* border: 2px solid blue; */
 }
 
 .home-txt .text {
   margin-right: 0.8rem;
+  /* white-space: nowrap; */
 }
 
 .waving-hand {
-  width: 80px;
+  /* width: 80px;
+  height: auto; */
+  /* width: 80px; */
+  width: 100%;
+  max-width: 60px;
   height: auto;
 }
 
@@ -165,6 +177,7 @@
     width: 100%; 
     height: auto;
     max-width: 350px;
+    /* min-width: 300px; */
     aspect-ratio: 1/1;
 }
 
