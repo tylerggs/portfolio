@@ -8,14 +8,23 @@
 /*Navbar*/
 .navbar {
   position: fixed;
-  top: 100px;
+  top: 50px;
   left: 0;
   right: 0;
-  padding: 0 6rem;
-  background: var(--white-1);
-  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-
+  padding: 1.5rem 6rem;
+  z-index: 99;
+  transition: top 0.3s ease, backdrop-filter 0.3s ease;
+  border-radius: 0 0 2px 2px;
+  z-index: 9;
+  /* background: red; */
+  
   /* border: 2px solid red; */
+}
+
+.navbar.scrolled {
+  top: 0;
+  background: var(--white-1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-wrapper {
@@ -23,6 +32,7 @@
   justify-content: space-between;
   align-items: center;
   /* border: 2px solid red; */
+  /* border: 2px solid magenta; */
 }
 .nav-logo {
   font-size: 1.2rem;
@@ -30,10 +40,43 @@
   color: var(--black-1);
 }
 
+.grid-toggle{
+  display: none;
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+}
+
+.close-toggle{
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  width: 28px;
+  height: auto;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 1rem; 
+  transition: transform 0.3s ease;
+}
+
 .navbar-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  width: auto;
+  padding: 0.5rem;
+
   /* border: 2px solid red; */
   margin-left: 2rem;
-
   font-size: 1rem;
   font-weight: 600;
   color: var(--black-1);
@@ -48,6 +91,7 @@
 
 .navbar-menu a img {
   display: none;
+  margin-bottom: 0.5rem;
 }
 
 /*End Navbar*/
@@ -59,6 +103,7 @@
   background: var(--white-1);
   /* border: 2px solid red; */
   margin: 0 auto;
+  z-index: 1;
 }
 
 .home-wrapper{
@@ -68,6 +113,9 @@
     /* border: 2px solid green; */
     gap: 5rem;
     padding: 0 3rem;
+
+    
+  /* border: 2px solid red; */
 }
 
 .home-txt {
@@ -128,6 +176,7 @@
     justify-content: flex-start;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 200px;
     gap: .7rem;
 
     /* border: 2px solid red; */
@@ -179,6 +228,7 @@
     max-width: 350px;
     /* min-width: 300px; */
     aspect-ratio: 1/1;
+    z-index: 1;
 }
 
 @keyframes blob-animate{
