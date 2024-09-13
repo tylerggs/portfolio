@@ -136,7 +136,7 @@
 .home {
   /* height: 100%; */
   padding: 280px 0;
-  background: var(--white-1);
+  /* background: var(--white-1); */
   margin: 0 auto;
   z-index: 1;
 
@@ -276,8 +276,6 @@
   /* justify-content: center; */
   align-items: center;
   gap: 5rem;
-
-  /* border: 2px solid blue; */
 }
 
 .about-img-container {
@@ -335,26 +333,25 @@
 /*End About*/
 
 /*Projects*/
-.project {
+/* .project {
   border: 2px solid red;
-  /* overflow: hidden; */
 }
 
 .project_ {
   border: 2px solid blue;
-}
+} */
 
 .project_ h1 {
   margin-bottom: 0.5rem;
 }
 
 .project-works-container {
-  border: 2px solid magenta;
+  /* border: 2px solid magenta; */
   padding-top: 50px;
 }
 
 .p-works-content {
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,7 +361,8 @@
 }
 
 .p-works-img {
-  width: 860px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .p-works-img img {
