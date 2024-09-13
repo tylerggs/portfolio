@@ -88,3 +88,43 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 200) { 
+      scrollToTopButton.classList.add('show');
+    } else {
+      scrollToTopButton.classList.remove('show');
+    }
+  });
+
+  scrollToTopButton.addEventListener('click', function(event) {
+    event.preventDefault(); 
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+//   window.addEventListener('scroll', function() {
+//     if (window.scrollY > 200) { 
+//       scrollToTopButton.classList.add('show');
+//     } else {
+//       scrollToTopButton.classList.remove('show');
+//     }
+//   });
+
+//   scrollToTopButton.addEventListener('click', function(event) {
+//     event.preventDefault(); 
+//     window.scrollTo({
+//       top: 0,
+//       behavior: 'smooth'
+//     });
+//   });
+// });
+
