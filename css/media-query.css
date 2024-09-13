@@ -19,7 +19,7 @@
     display: none;
   }
 
-  .about-content{
+  .about_{
     margin: 0 50px;
   }
 }
@@ -141,7 +141,7 @@
     padding-right: 8px;
   }
 
-  .about-content{
+  .about_{
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -189,7 +189,12 @@
   .home-img {
     max-width: 300px;
   }
+}
 
+@media screen and (max-width: 375px) {
+  .about-img-container {
+    padding: 0 30px;
+  }
 }
 
 @media screen and (max-width: 345px) {
@@ -207,9 +212,5 @@
 
   .navbar-menu a {
     font-size: .9rem;
-  }
-
-  .about-img-container {
-    padding: 0 30px;
   }
 }

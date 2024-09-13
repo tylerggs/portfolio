@@ -5,17 +5,40 @@
   margin: 0 auto;
 }
 
+.content {
+  margin: 0 180px;
+}
+
 .p-text {
   color: var(--gray-1);
   font-size: 1rem;
   line-height: 1.8;
 }
 
+.p-text-m,
+.p-text-l {
+  color: var(--black-1);
+}
+
 .p-text-m {
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--black-1);
 }
+
+.p-text-l {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.about,
+.project {
+  padding: 50px 0 280px 0;
+}
+
+/* .home, 
+.about {
+  padding: 280px 0;
+} */
 
 /*Navbar*/
 .navbar {
@@ -111,8 +134,8 @@
 
 /*Home*/
 .home {
-  padding: 280px 0;
   /* height: 100%; */
+  padding: 280px 0;
   background: var(--white-1);
   margin: 0 auto;
   z-index: 1;
@@ -240,19 +263,18 @@
 
 /*About*/
 .about {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
-.about-content {
+.about_ {
   /* border: 2px solid magenta; */
   display: flex;
   /* justify-content: center; */
   align-items: center;
-  margin: 0 180px;
   gap: 5rem;
 
   /* border: 2px solid blue; */
@@ -268,7 +290,14 @@
   width: 100%;
   height: auto;
   border-radius: 25px;
-  background: linear-gradient(180deg, #d1cfd1 0%, #e6e6e8 25%, #efeff0 50%, #f6f7f9 75%, #fbfcfe 100%);
+  background: linear-gradient(
+    180deg,
+    #d1cfd1 0%,
+    #e6e6e8 25%,
+    #efeff0 50%,
+    #f6f7f9 75%,
+    #fbfcfe 100%
+  );
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
@@ -303,10 +332,172 @@
   text-align: justify;
   padding-right: 15px;
 }
-
 /*End About*/
 
 /*Projects*/
+.project {
+  border: 2px solid red;
+  /* overflow: hidden; */
+}
+
+.project_ {
+  border: 2px solid blue;
+}
+
+.project_ h1 {
+  margin-bottom: 0.5rem;
+}
+
+.project-works-container {
+  border: 2px solid magenta;
+  padding-top: 50px;
+}
+
+.p-works-content {
+  border: 2px solid brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 80px;
+  margin-bottom: 80px;
+}
+
+.p-works-img {
+  width: 860px;
+}
+
+.p-works-img img {
+  width: 100%;
+  height: auto;
+}
+
+.p-works-text h1,
+.p-works-text p,
+.pwt-tools {
+  margin-bottom: 1rem;
+}
+
+.p-works-text h1{
+  font-weight: 700;
+}
+
+/* .p-works-text p{
+  padding-right: 10px;
+} */
+
+
+.pwt-tools {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.pwt-tools h1 {
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  color: var(--white-1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.pwt-tools h1:hover {
+  transform: scale(1.1);
+}
+
+.pwt-tools .html {
+  background: linear-gradient(to right, #e54c26, #f06429);
+}
+
+.pwt-tools .css {
+  background: linear-gradient(to right, #274ce4, #2864f1);
+}
+
+.pwt-tools .js {
+  background: linear-gradient(to right, #eacb30, #fedf24);
+}
+
+/* .pwt-tools h1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pwt-tools h1::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.pwt-tools h1:hover::after {
+  width: 100%; 
+}
+
+.pwt-tools h1:nth-child(1)::after {
+  background-color: #ef642b;
+}
+
+.pwt-tools h1:nth-child(2)::after {
+  background-color: #369cd6;
+}
+
+.pwt-tools h1:nth-child(3)::after {
+  background-color: #f1da4f;
+} */
+
+.pwt-btns{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn-code,
+.btn-demo{
+  position: relative;
+  background: none;
+  border: none;
+  font-size: .9rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--black-1);
+}
+
+.btn-code i{
+  font-size: 1.2rem;
+}
+
+.btn-code::after,
+.btn-demo::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--black-1);
+  transition: width 0.3s ease;
+}
+
+.btn-code:hover::after,
+.btn-demo:hover::after {
+  width: 100%; 
+}
+
+
+
+
+
+
+
 /*End Projects*/
 
 /*Contact*/
