@@ -1,3 +1,4 @@
+//Download Cv Button
 document.addEventListener("DOMContentLoaded", function () {
     const downloadBtn = document.querySelector('.dl-cv-btn');
     const fileUrl = 'assets/cv/Gravador_Tyler_Jake G_Resume.pdf'; 
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  //Code and Demo Buttons
   document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll('.btn-code, .btn-demo');
   
