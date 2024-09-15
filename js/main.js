@@ -66,44 +66,43 @@ window.addEventListener("scroll", function () {
 // });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const gridToggle = document.querySelector(".grid-toggle");
-    const closeToggle = document.querySelector(".close-toggle");
-    const navbarMenu = document.querySelector(".navbar-menu");
+  const gridToggle = document.querySelector(".grid-toggle");
+  const closeToggle = document.querySelector(".close-toggle");
+  const navbarMenu = document.querySelector(".navbar-menu");
 
-    function openMenu() {
-        navbarMenu.classList.add("show");
-    }
+  function openMenu() {
+    navbarMenu.classList.add("show");
+  }
 
-    function closeMenu() {
-        navbarMenu.classList.remove("show");
-    }
+  function closeMenu() {
+    navbarMenu.classList.remove("show");
+  }
 
-    gridToggle.addEventListener("click", function () {
-        openMenu();
-    });
+  gridToggle.addEventListener("click", function () {
+    openMenu();
+  });
 
-    closeToggle.addEventListener("click", function () {
-        closeMenu();
-    });
+  closeToggle.addEventListener("click", function () {
+    closeMenu();
+  });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopButton = document.querySelector(".scroll-to-top");
 
-document.addEventListener('DOMContentLoaded', function() {
-  const scrollToTopButton = document.querySelector('.scroll-to-top');
-
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 200) { 
-      scrollToTopButton.classList.add('show');
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+      scrollToTopButton.classList.add("show");
     } else {
-      scrollToTopButton.classList.remove('show');
+      scrollToTopButton.classList.remove("show");
     }
   });
 
-  scrollToTopButton.addEventListener('click', function(event) {
-    event.preventDefault(); 
+  scrollToTopButton.addEventListener("click", function (event) {
+    event.preventDefault();
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
 });
@@ -112,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //   const scrollToTopButton = document.querySelector('.scroll-to-top');
 
 //   window.addEventListener('scroll', function() {
-//     if (window.scrollY > 200) { 
+//     if (window.scrollY > 200) {
 //       scrollToTopButton.classList.add('show');
 //     } else {
 //       scrollToTopButton.classList.remove('show');
@@ -120,11 +119,25 @@ document.addEventListener('DOMContentLoaded', function() {
 //   });
 
 //   scrollToTopButton.addEventListener('click', function(event) {
-//     event.preventDefault(); 
+//     event.preventDefault();
 //     window.scrollTo({
 //       top: 0,
 //       behavior: 'smooth'
 //     });
 //   });
 // });
+
+
+//Loader
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    const loader = document.getElementById("loader");
+    if (loader) {
+      loader.classList.add("hidden");
+    }
+  }, 1000);
+});
+
+
 

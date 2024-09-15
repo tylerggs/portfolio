@@ -32,6 +32,7 @@
     <title>Tyler Gravador | Front-end Developer</title>
 
     <!--css links-->
+    <link rel="stylesheet" href="css/loader.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/boilerplate.css" />
     <link rel="stylesheet" href="css/root.css" />
@@ -41,6 +42,10 @@
   </head>
 
   <body>
+    <!--Loader-->
+    <div class="code-loader" id="loader"><span>{</span><span>}</span></div>
+    <!--End Loader-->
+
     <!--Navbar-->
     <div class="navbar" id="navbar">
       <div class="navbar-wrapper container">
@@ -130,7 +135,7 @@
                 <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
               </svg>
 
-              <svg
+              <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="28"
                 height="28"
@@ -148,7 +153,30 @@
               1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 
               5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
                 ></path>
-              </svg>
+              </svg> -->
+
+              <a
+                href="https://github.com/https-ty"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-activity"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
 
               <div class="tech-skills-container">
                 <p class="p-text-m">Current Tech Skills</p>
@@ -182,7 +210,7 @@
             </div>
 
             <div class="about-details-container">
-              <h1 class="p-text-m">About Me</h1>
+              <h1 class="p-text-m">About Me 🙋‍♂️</h1>
               <h2 class="p-text-l">
                 An Aspiring Front-end Developer <br class="break" />
                 from Imus City, Cavite
@@ -194,11 +222,39 @@
                 improvement and learning new technologies to enhance my skills.
               </p>
 
-              <p class="p-text">
+              <!-- <p class="p-text">
                 My current tech skills include HTML, CSS, and JavaScript, and I
                 utilize frameworks such as Bootstrap and Tailwind CSS to create
                 clean, responsive, and user-friendly web interfaces.
-              </p>
+              </p> -->
+
+              <div class="dl-cv-container">
+              <button id="download-btn" class="dl-cv-btn" type="button">
+                <span class="button__text">Download CV</span>
+                <span class="button__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
+                    <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                    <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                    <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <!-- <div class="dl-cv-container">
+              <a href="path/to/your-cv.pdf" download="Your_CV_Name.pdf" class="dl-cv-btn" type="button">
+                <span class="button__text">Download CV</span>
+                <span class="button__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" class="svg">
+                    <path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path>
+                    <path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path>
+                    <path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path>
+                  </svg>
+                </span>
+              </a>
+            </div> -->
+            
+            
             </div>
           </div>
         </div>
@@ -233,12 +289,12 @@
                   </div>
 
                   <div class="pwt-btns">
-                    <button class="btn-code">
+                    <button class="btn-code"  data-url="https://github.com/https-ty/Tincture">
                       Code
                       <i class="fa-brands fa-github"></i>
                     </button>
 
-                    <button class="btn-demo">
+                    <button class="btn-demo" data-url="https://https-ty.github.io/Tincture/">
                       Live Demo
                       <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </button>
@@ -262,12 +318,12 @@
                   </div>
 
                   <div class="pwt-btns">
-                    <button class="btn-code">
+                    <button class="btn-code" data-url="https://github.com/https-ty/Blogr-landing-page">
                       Code
                       <i class="fa-brands fa-github"></i>
                     </button>
 
-                    <button class="btn-demo">
+                    <button class="btn-demo" data-url="https://https-ty.github.io/Blogr-landing-page/">
                       Live Demo
                       <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </button>
@@ -299,12 +355,12 @@
                   </div>
 
                   <div class="pwt-btns">
-                    <button class="btn-code">
+                    <button class="btn-code" data-url="https://github.com/https-ty/Insure_landing-page">
                       Code
                       <i class="fa-brands fa-github"></i>
                     </button>
 
-                    <button class="btn-demo">
+                    <button class="btn-demo" data-url="https://https-ty.github.io/Insure_landing-page/">
                       Live Demo
                       <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </button>
@@ -328,12 +384,12 @@
                   </div>
 
                   <div class="pwt-btns">
-                    <button class="btn-code">
+                    <button class="btn-code" data-url="https://github.com/https-ty/Sunnyside-agency-landing">
                       Code
                       <i class="fa-brands fa-github"></i>
                     </button>
 
-                    <button class="btn-demo">
+                    <button class="btn-demo" data-url="https://https-ty.github.io/Sunnyside-agency-landing/">
                       Live Demo
                       <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </button>
@@ -427,9 +483,9 @@
       <!--End Contact-->
     </main>
 
-     <!-- Scroll to Top Button -->
-     <a href="#" class="scroll-to-top">
-      <img src="assets/icons/arrow-up.png" alt="">
+    <!-- Scroll to Top Button -->
+    <a href="#" class="scroll-to-top">
+      <img src="assets/icons/arrow-up.png" alt="" />
     </a>
 
     <!--Footer-->
@@ -461,6 +517,11 @@
               <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
             </svg>
 
+            <a
+            href="https://github.com/https-ty"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -474,12 +535,10 @@
               class="feather feather-activity"
             >
               <path
-                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 
-          0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 
-          1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 
-          5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
               ></path>
             </svg>
+          </a>
           </div>
         </div>
 
@@ -491,4 +550,5 @@
     <!--End Footer-->
   </body>
   <script src="js/main.js"></script>
+  <script src="js/btns-handler.js"></script>
 </html>

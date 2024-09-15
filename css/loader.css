@@ -1,0 +1,40 @@
+.code-loader {
+  color: var(--black-1);
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 50px;
+  opacity: 1;
+  background-color: var(--white-1);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+.code-loader.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+  visibility: hidden;
+}
+
+.code-loader span {
+  display: inline-block;
+  animation: pulse_414 0.4s alternate infinite ease-in-out;
+}
+
+.code-loader span:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse_414 {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
