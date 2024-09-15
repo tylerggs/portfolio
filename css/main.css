@@ -254,7 +254,7 @@
 
 .home-img {
   /* background: url(./assets/img/home_img2.jpg); */
-  background: url(/portfolio/assets/img/home_img...jpg);
+  background-image: url(/portfolio/assets/img/home_img...jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
