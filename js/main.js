@@ -1,3 +1,10 @@
+//Auto Reload when screen reduces
+window.addEventListener('resize', function() {
+  // Reload the page when the screen is resized
+  window.location.reload();
+});
+
+
 //Navbar Scrolls function
 // document.addEventListener("DOMContentLoaded", function () {
 //     const navbar = document.getElementById("navbar");
