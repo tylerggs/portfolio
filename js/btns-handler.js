@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const downloadBtn = document.querySelector('.dl-cv-btn');
-    const fileUrl = 'Gravador_Tyler_Jake G_Resume.pdf'; 
+    const fileUrl = 'assets/cv/Gravador_Tyler_Jake G_Resume.pdf'; 
   
     downloadBtn.addEventListener('click', function () {
       const link = document.createElement('a');
