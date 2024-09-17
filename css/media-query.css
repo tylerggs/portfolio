@@ -39,19 +39,18 @@
 }
 
 @media screen and (max-width: 1000px) {
-
   #about-section,
-  #project-section{
+  #project-section {
     scroll-margin-top: 30px;
   }
 
-  #contact-section{
+  #contact-section {
     scroll-margin-top: 80px;
   }
 
   .scroll-to-top img {
     width: 34px;
-    height: 34px; 
+    height: 34px;
   }
 
   .navbar {
@@ -187,8 +186,8 @@
     padding-right: 0;
     text-align: center;
   }
-  
-  .dl-cv-container{
+
+  .dl-cv-container {
     justify-content: center;
   }
 
@@ -233,9 +232,25 @@
 }
 
 @media screen and (max-width: 768px) {
+  [data-aos-duration] {
+    transition-duration: 300ms !important;
+  }
+
+  [data-aos-delay] {
+    transition-delay: 50ms !important;
+  }
+
   .about-details-container {
     /* border: 2px solid yellow; */
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 
