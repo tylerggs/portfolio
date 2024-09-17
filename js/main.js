@@ -137,14 +137,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Loader
 
-// window.addEventListener("load", function () {
-//   setTimeout(function () {
-//     const loader = document.getElementById("loader");
-//     if (loader) {
-//       loader.classList.add("hidden");
-//     }
-//   }, 1000);
-// });
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    const loader = document.getElementById("loader");
+    if (loader) {
+      loader.classList.add("hidden");
+    }
+  }, 1000);
+});
 
 
 
