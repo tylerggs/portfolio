@@ -26,12 +26,6 @@
   }
 }
 
-/* @media screen and (max-width: 1147px) {
-    .home-txt h1 {
-        font-size: 2.4rem;
-    }
-} */
-
 @media screen and (max-width: 1030px) {
   .ct_socials-container {
     gap: 3rem;

@@ -4,6 +4,7 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .content {
@@ -36,10 +37,6 @@
   padding-top: 50px;
 }
 
-/* .home, 
-.about {
-  padding: 280px 0;
-} */
 
 /*Navbar*/
 .navbar {
