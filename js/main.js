@@ -1,6 +1,6 @@
 //Reload = Home
 window.addEventListener('load', function() {
-  window.location.hash = '#home';
+  window.location.hash = '#home-section';
 });
 
 

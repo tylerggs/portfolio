@@ -33,12 +33,12 @@
 }
 
 @media screen and (max-width: 1000px) {
-  #about,
-  #project {
+  #about-section,
+  #project-section {
     scroll-margin-top: 30px;
   }
 
-  #contact {
+  #contact-section {
     scroll-margin-top: 80px;
   }
 
